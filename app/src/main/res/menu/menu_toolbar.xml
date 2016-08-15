@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--弹出框列表样式-->
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools">
+
+    <item
+        android:id="@+id/tb_search"
+        android:title="搜索"
+        android:icon="@mipmap/icon_search"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/tb_msg"
+        android:title="信息"
+        android:icon="@mipmap/icon_msg"
+        app:showAsAction="never"/>
+
+</menu>

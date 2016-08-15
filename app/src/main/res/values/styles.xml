@@ -1,0 +1,23 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorSecondary">#fff</item>
+    </style>
+
+    <!--修改弹出框背景-->
+    <style name="ToolBarPopTheme" parent="@style/ThemeOverlay.AppCompat.Dark">
+        <item name="android:colorBackground">#71f475</item>
+        <item name="actionOverflowMenuStyle">@style/OverFlowMenuStyle</item>
+    </style>
+
+    <!--修改弹出框出现位置-->
+    <style name="OverFlowMenuStyle" parent="Widget.AppCompat.Light.PopupMenu.Overflow">
+        <item name="overlapAnchor">false</item>
+    </style>
+    
+</resources>
