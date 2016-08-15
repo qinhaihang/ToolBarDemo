@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="qhh.toolbardemo.MainActivity">
 
     <android.support.v7.widget.Toolbar
@@ -14,11 +15,11 @@
         android:background="?attr/colorPrimary"
         android:minHeight="?attr/actionBarSize"
         app:logo="@mipmap/ic_launcher"
+        app:popupTheme="@style/ToolBarPopTheme"
         app:subtitle="subtitle"
-        app:title="title"
-        app:titleTextColor="@android:color/white"
         app:subtitleTextColor="@android:color/white"
-        app:popupTheme="@style/ToolBarPopTheme">
+        app:title="title"
+        app:titleTextColor="@android:color/white">
 
         <TextView
             android:layout_width="wrap_content"
@@ -28,4 +29,27 @@
 
     </android.support.v7.widget.Toolbar>
 
-</RelativeLayout>
+    <android.support.v4.widget.DrawerLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--content-->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </FrameLayout>
+
+        <!--侧滑菜单-->
+        <android.support.design.widget.NavigationView
+            android:id="@+id/navigation"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            app:headerLayout="@layout/navigation_header"
+            app:menu="@menu/menu_navigation"/>
+
+
+    </android.support.v4.widget.DrawerLayout>
+
+</LinearLayout>
