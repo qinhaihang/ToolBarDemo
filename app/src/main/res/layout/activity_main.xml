@@ -18,6 +18,7 @@
         app:popupTheme="@style/ToolBarPopTheme"
         app:subtitle="subtitle"
         app:subtitleTextColor="@android:color/white"
+        app:theme="@style/MyToolbarTheme"
         app:title="title"
         app:titleTextColor="@android:color/white">
 
@@ -25,6 +26,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:textColor="@color/white"
             android:text="标题"/>
 
     </android.support.v7.widget.Toolbar>

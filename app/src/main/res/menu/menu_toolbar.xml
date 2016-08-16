@@ -4,10 +4,11 @@
       xmlns:app="http://schemas.android.com/apk/res-auto"
       xmlns:tools="http://schemas.android.com/tools">
 
+    <!--android:icon="@mipmap/icon_search"-->
     <item
+
         android:id="@+id/tb_search"
         android:title="搜索"
-        android:icon="@mipmap/icon_search"
         app:showAsAction="ifRoom"/>
 
     <item

@@ -1,16 +1,26 @@
 <resources>
 
     <!-- Base application theme. -->
+    <!--不应该 textColorSecondary 放在此段代码中-->
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
-        <item name="android:textColorSecondary">#fff</item>
+    </style>
+
+    <!--<item name="colorControlNormal">@color/white</item>-->
+
+    <!--<item name="android:textColorSecondary">@color/white</item>-->
+    <style name="MyToolbarTheme" parent="@style/ThemeOverlay.AppCompat">
+        <item name="actionMenuTextColor">@android:color/holo_blue_bright</item>
+        <item name="android:textColor">#0dccb9</item>
+        <item name="android:textColorSecondary">@color/white</item>
     </style>
 
     <!--修改弹出框背景-->
-    <style name="ToolBarPopTheme" parent="@style/ThemeOverlay.AppCompat.Dark">
+    <!--<item name="android:actionOverflowButtonStyle">@style/OverFlowMenuStyle</item>-->
+    <style name="ToolBarPopTheme" parent="@style/ThemeOverlay.AppCompat">
         <item name="android:colorBackground">#71f475</item>
         <item name="actionOverflowMenuStyle">@style/OverFlowMenuStyle</item>
     </style>
@@ -19,5 +29,5 @@
     <style name="OverFlowMenuStyle" parent="Widget.AppCompat.Light.PopupMenu.Overflow">
         <item name="overlapAnchor">false</item>
     </style>
-    
+
 </resources>
